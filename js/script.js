@@ -7,7 +7,7 @@ console.log("script linked");
 };
 
 async function fetchData() {
-    fetch('data.json')
+    fetch('new.json')
         .then(response => response.json())
         .then(data => displayStudentData(data))
         .catch(error => console.error('Error fetching data:', error));
