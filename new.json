@@ -1,0 +1,10 @@
+{
+    "name": "Sasuke",
+    "age": 22,
+    "degree": "DgdX",
+    "courses": [
+        "Web Essentials",
+        "Web Advanced",
+        "IT",
+    ]
+}
