@@ -7,7 +7,7 @@ window.onload = ()=> {
 };
 
 async function fetchData() {
-    fetch('js/new.json')
+    fetch('js/data.json')
         .then(response => response.json())
         .then(data => displayStudentData(data))
         .catch(error => console.error('Error fetching data:', error));
