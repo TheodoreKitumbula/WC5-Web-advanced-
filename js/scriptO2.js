@@ -3,8 +3,6 @@ window.onload = async () => {
     let results = await fetch('data.json');
     data = await results.json();
 
-
-
     document.getElementById('klasgroep')
     .addEventListener('change', (event) => {
        vulLeerlingen(event.target.value);
@@ -15,6 +13,7 @@ window.onload = async () => {
     .addEventListener('change', (event) => {
     });
     
+    selectgroep();
 };
 
 
