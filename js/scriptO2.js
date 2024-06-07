@@ -29,10 +29,21 @@ function selectgroep(){
 
 klasgroep.addEventListener('change', (event) => {
     selectLeerlingen(event.target.value);
-});
+})
+}
 
 
 
-let selectLeerlingen () {
-    
+let selectLeerlingen (klasgroep) => {
+    let leerlingen= document.getElementById('leerlingen');
+    selectLeerlingen.innerHTML = ''; 
+
+    let leerlingen = data[selectedKlasgroep];
+    for (let id in leerlingen) {
+        let option = document.createElement('option');
+        option.value = id;
+        option.innerText = leerlingen[id];
+        leerlingen.appendChild(option);
+    }
+
 }
