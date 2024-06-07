@@ -33,7 +33,7 @@ klasgroep.addEventListener('change', (event) => {
 
 
 
-let selectLeerlingen (klasgroep) => {
+let selectLeerlingen = (klasgroep) => {
     let leerlingen= document.getElementById('leerlingen');
     selectLeerlingen.innerHTML = ''; 
 
