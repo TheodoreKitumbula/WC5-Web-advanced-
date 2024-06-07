@@ -1,6 +1,6 @@
 window.onload = async () => {
 
-    let results = await fetch('data.json');
+    let results = await fetch('dataoef2.json');
     data = await results.json();
 
     document.getElementById('klasgroep')
