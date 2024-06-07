@@ -20,17 +20,19 @@ window.onload = async () => {
 
 function selectgroep(){
     let klasgroep = document.getElementById('klasgroep');
-    for (const klas in data) {
+    for (let klas in data) {
         const option = document.createElement('option');
         option.value = klas;
-        option.textContent = klas;
-        klasgroepDropdown.appendChild(option);
-
+        option.innerText = klas;
+        select.appendChild(option);
 }
 
+klasgroep.addEventListener('change', (event) => {
+    selectLeerlingen(event.target.value);
+});
 
 
-let selectLeerlingen ()=> {
 
-
+let selectLeerlingen () {
+    
 }
