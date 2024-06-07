@@ -36,8 +36,7 @@ klasgroep.addEventListener('change', (event) => {
 let selectLeerlingen = (klasgroep) => {
     let leerlingen= document.getElementById('leerlingen');
     selectLeerlingen.innerHTML = ''; 
-
-    let leerlingen = data[selectedKlasgroep];
+    
     for (let id in leerlingen) {
         let option = document.createElement('option');
         option.value = id;
