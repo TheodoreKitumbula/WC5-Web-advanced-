@@ -43,7 +43,7 @@ let selectLeerlingen (klasgroep) => {
         let option = document.createElement('option');
         option.value = id;
         option.innerText = leerlingen[id];
-        leerlingen.appendChild(option);
+        select.appendChild(option);
     }
 
 }
